@@ -10,7 +10,7 @@ use Psr\SimpleCache\CacheInterface;
 /**
  * A PSR-16 implementation which stores data in a RedisDB collection.
  */
-final class RedisCache implements CacheInterface
+class RedisCache implements CacheInterface
 {
     use KeyValidatorTrait;
     use TTLValidatorTrait;
