@@ -15,9 +15,9 @@
     },
     "require": {
         "php": "^7.0",
-        "psr/simple-cache": "^1.0",
+        "chadicus/psr-cache-helper": "^0.3",
         "predis/predis": "^1.1",
-        "chadicus/psr-cache-helper": "^0.1"
+        "psr/simple-cache": "^1.0"
     },
     "require-dev": {
         "chadicus/coding-standard": "^1.2",

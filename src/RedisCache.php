@@ -2,6 +2,8 @@
 
 namespace Chadicus\Psr\SimpleCache;
 
+use Chadicus\Psr\SimpleCache\Serializer\BasicSerializer;
+use Chadicus\Psr\SimpleCache\Serializer\SerializerInterface;
 use DateInterval;
 use DateTime;
 use Predis\ClientInterface;
