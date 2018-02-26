@@ -40,7 +40,7 @@ final class RedisCache implements CacheInterface
     public function __construct(ClientInterface $client, SerializerInterface $serializer = null)
     {
         $this->client = $client;
-        $this->serializer = $serializer ?: new BasicSerializer();
+        $this->serializer = $serializer ?? new BasicSerializer();
     }
 
     /**
