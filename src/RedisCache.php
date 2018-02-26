@@ -54,8 +54,9 @@ class RedisCache implements CacheInterface
     public function get($key, $default = null)//@codingStandardsIgnoreLine Interface does not define type-hints or return
     {
         $this->validateKey($key);
-        if ($this->client->exists($key)) {
-            return $this->serializer->unserialize($this->client->get($key));
+
+        if ($cacheItem = $this->client->get($key)) {
+            return $this->serializer->unserialize($cacheItem);
         }
 
         return $default;
