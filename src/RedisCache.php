@@ -2,6 +2,8 @@
 
 namespace Chadicus\Psr\SimpleCache;
 
+use Chadicus\Psr\SimpleCache\Serializer\BasicSerializer;
+use Chadicus\Psr\SimpleCache\Serializer\SerializerInterface;
 use DateInterval;
 use DateTime;
 use Predis\ClientInterface;
@@ -38,7 +40,7 @@ final class RedisCache implements CacheInterface
     public function __construct(ClientInterface $client, SerializerInterface $serializer = null)
     {
         $this->client = $client;
-        $this->serializer = $serializer ?: new BasicSerializer();
+        $this->serializer = $serializer ?? new BasicSerializer();
     }
 
     /**
@@ -124,8 +126,7 @@ final class RedisCache implements CacheInterface
      */
     public function setMultiple($values, $ttl = null)//@codingStandardsIgnoreLine Interface does not define type-hints or return
     {
-        $keys = array_keys($values);
-        array_walk($keys, [$this, 'validateKey']);
+        $this->validateKeys(array_keys($values));
         $this->validateTTL($ttl);
         foreach ($values as $key => $value) {
             if (!$this->set($key, $value, $ttl)) {
@@ -162,7 +163,7 @@ final class RedisCache implements CacheInterface
      */
     public function deleteMultiple($keys)//@codingStandardsIgnoreLine Interface does not define type-hints
     {
-        array_walk($keys, [$this, 'validateKey']);
+        $this->validateKeys($keys);
         return $this->client->del($keys) === count($keys);
     }
 
