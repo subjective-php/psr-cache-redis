@@ -1,9 +1,9 @@
 <?php
 
-namespace Chadicus\Psr\SimpleCache;
+namespace SubjectivePHP\Psr\SimpleCache;
 
-use Chadicus\Psr\SimpleCache\Serializer\BasicSerializer;
-use Chadicus\Psr\SimpleCache\Serializer\SerializerInterface;
+use SubjectivePHP\Psr\SimpleCache\Serializer\BasicSerializer;
+use SubjectivePHP\Psr\SimpleCache\Serializer\SerializerInterface;
 use DateInterval;
 use DateTime;
 use Predis\ClientInterface;

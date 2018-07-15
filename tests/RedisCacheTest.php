@@ -1,13 +1,13 @@
 <?php
 
-namespace ChadicusTest\Psr\SimpleCache;
+namespace SubjectivePHPTest\Psr\SimpleCache;
 
 use DateTime;
-use Chadicus\Psr\SimpleCache\RedisCache;
+use SubjectivePHP\Psr\SimpleCache\RedisCache;
 use Predis\Client;
 
 /**
- * @coversDefaultClass \Chadicus\Psr\SimpleCache\RedisCache
+ * @coversDefaultClass \SubjectivePHP\Psr\SimpleCache\RedisCache
  * @covers ::__construct
  * @covers ::<private>
  */
