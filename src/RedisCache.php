@@ -1,9 +1,11 @@
 <?php
 
-namespace Chadicus\Psr\SimpleCache;
+namespace SubjectivePHP\Psr\SimpleCache;
 
+use Chadicus\Psr\SimpleCache\KeyValidatorTrait;
 use Chadicus\Psr\SimpleCache\Serializer\BasicSerializer;
 use Chadicus\Psr\SimpleCache\Serializer\SerializerInterface;
+use Chadicus\Psr\SimpleCache\TTLValidatorTrait;
 use DateInterval;
 use DateTime;
 use Predis\ClientInterface;

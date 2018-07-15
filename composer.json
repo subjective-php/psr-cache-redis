@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Chadicus\\Psr\\SimpleCache\\": "src"
+            "SubjectivePHP\\Psr\\SimpleCache\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ChadicusTest\\Psr\\SimpleCache\\": "tests"
+            "SubjectivePHPTest\\Psr\\SimpleCache\\": "tests"
         }
     }
 }
