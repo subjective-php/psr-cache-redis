@@ -3,13 +3,6 @@
     "description": "PSR-16 SimpleCache Implementation using Predis",
     "keywords": ["psr16", "psr", "cache", "simple-cache", "redis", "predis"],
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Chad Gray",
-            "email": "chadwickgray@gmail.com",
-            "role": "Developer"
-        }
-    ],
     "config": {
         "sort-packages": true
     },
