@@ -12,7 +12,7 @@
 [![Daily Downloads](https://poser.pugx.org/subjective-php/psr-cache-redis/d/daily)](https://packagist.org/packages/subjective-php/psr-cache-redis)
 [![Monthly Downloads](https://poser.pugx.org/subjective-php/psr-cache-redis/d/monthly)](https://packagist.org/packages/subjective-php/psr-cache-redis)
 
-[![Documentation](https://img.shields.io/badge/reference-phpdoc-blue.svg?style=flat)](http://pholiophp.org/subjective-php/psr-cache-redis)
+[![Documentation](https://img.shields.io/badge/reference-phpdoc-blue.svg?style=flat)](http://www.pholiophp.org/subjective-php/psr-cache-redis)
 
 [PSR-16 SimpleCache](http://www.php-fig.org/psr/psr-16/) Implementation using [Predis](https://github.com/nrk/predis/wiki)
 
