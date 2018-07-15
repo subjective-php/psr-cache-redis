@@ -1,5 +1,5 @@
 {
-    "name": "chadicus/psr-cache-redis",
+    "name": "subjective-php/psr-cache-redis",
     "description": "PSR-16 SimpleCache Implementation using Predis",
     "keywords": ["psr16", "psr", "cache", "simple-cache", "redis", "predis"],
     "license": "MIT",
