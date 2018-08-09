@@ -26,5 +26,8 @@
         "psr-4": {
             "SubjectivePHPTest\\Psr\\SimpleCache\\": "tests"
         }
+    },
+    "provide": {
+        "psr/simple-cache-implementation": "1.0"
     }
 }
